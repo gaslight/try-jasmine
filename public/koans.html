@@ -8,20 +8,16 @@
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>	
   <script type="text/javascript" src="js/vendor/underscore-min.js"></script>
+  <script type="text/javascript" src="js/vendor/backbone.js"></script>
   <script type="text/javascript" src="js/vendor/coffee-script.js"></script>
-  <script type="text/javascript" src="js/try-it.js"></script>
+  <script type="text/javascript" src="js/vendor/coffeekup.js"></script>
   <script type="text/javascript" src="js/vendor/ace/ace-uncompressed.js"></script>
   <script type="text/javascript" src="js/vendor/ace/mode-coffee.js"></script>
   <script type="text/javascript" src="js/vendor/ace/mode-javascript.js"></script>
-  <script type="text/coffeescript" src="js/test.coffee"></script>
-  <script type="text/coffeescript">
-    $ ->
-      $("#specs").codeBox()
-      $("#src").codeBox()
-      templates.init()
-  </script>
+  <script type="text/javascript" src="js/koans.js"></script>
 </head>
 <body>
+  <div id="koan_runner">
   <div class="body-wrap">
     <div class="head-wrap">
       <div class="head-top-wrap">
@@ -65,7 +61,7 @@
           <a href="#" class="button insert" data-snippet="beforeEach(function(){});">beforeEach</a>
         </div>
         <div id="spec-editor-wrapper" class="editor-wrapper">
-                <div id="specs" class="editor source"></div>
+                <div id="koan_editor" class="editor source"></div>
         </div>
       	<label for="src">source</label>
         <div id="source-editor-wrapper" class="editor-wrapper">
@@ -98,7 +94,7 @@
       <div class="who">brought to you by <a href="http://twitter.com/searls">@searls</a> via <a href="http://pillartechnology.com">pillar</a></div>
     </div>
   </div>
-
+</div>
   <a href="http://github.com/searls/try-jasmine"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
 
   <!--Templates-->
